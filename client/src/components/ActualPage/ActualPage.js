@@ -17,7 +17,7 @@ alert('mobile menu called')
 
     return(
         <>
-        <div className="flex">
+        <div  className='h-[100vh]'>
             
 
         {/* <!-- component -->
@@ -30,8 +30,8 @@ alert('mobile menu called')
     }
   }
 --> */}
-
-<div class="min-h-screen bg-gray-100">
+{/* sidebar commented */}
+{/* <div class="min-h-screen bg-gray-100">
   <div class="sidebar min-h-screen w-[3.35rem] overflow-hidden border-r hover:w-56 hover:bg-white hover:shadow-lg">
     <div class="flex h-screen flex-col justify-between pt-2 pb-6">
       <div>
@@ -97,7 +97,7 @@ alert('mobile menu called')
       </div>
     </div>
   </div>
-</div>
+</div> */}
                
             
 
@@ -117,7 +117,7 @@ alert('mobile menu called')
 
 <nav class="bg-gray-800 w-full h-[max-content]">
   <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-    <div class="relative flex h-16 items-center justify-between">
+    <div class="relative flex flex-wrap h-16 items-center justify-between">
       <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
         {/* <!-- Mobile menu button--> */}
         <button type="button" onClick={()=>mobileMenuToggle()} class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
@@ -145,10 +145,7 @@ alert('mobile menu called')
         </button>
       </div>
       <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-        <div class="flex flex-shrink-0 items-center">
-          <img class="block h-8 w-auto lg:hidden" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company"/>
-          <img class="hidden h-8 w-auto lg:block" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company"/>
-        </div>
+       
 
           <div class="hidden sm:ml-6 sm:block">
             <div class="flex space-x-4">
@@ -165,17 +162,18 @@ alert('mobile menu called')
         
     
       </div>
-      <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-      <div class="input-group relative flex  items-stretch w-full mb-4 rounded">
+      <div class="input-group relative flex  items-stretch  my-4 rounded ">
 
-      <span class="input-group-text flex items-center px-3 py-1.5 text-base font-normal text-gray-700 text-center whitespace-nowrap rounded" id="basic-addon2">
-        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="w-4" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-          <path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path>
-        </svg>
-      </span>
-      <input type="search" class="form-control relative flex-auto min-w-0 block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" placeholder="Search" aria-label="Search" aria-describedby="button-addon2"/>
-      
-    </div>
+<span class="input-group-text flex items-center px-3 py-1.5 text-base font-normal text-gray-700 text-center whitespace-nowrap rounded" id="basic-addon2">
+  <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="w-4" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+    <path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path>
+  </svg>
+</span>
+<input type="search" class="form-control relative flex-auto min-w-0 block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" placeholder="Search" aria-label="Search" aria-describedby="button-addon2"/>
+
+</div>
+      <div class=" flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+    
         <button type="button" class="rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
           <span class="sr-only">View notifications</span>
           {/* <!-- Heroicon name: outline/bell --> */}
@@ -237,6 +235,83 @@ alert('mobile menu called')
   
 </nav>
 
+<section className='h-[80vh] overflow-auto '>
+
+<div className='flex flex-wrap gap-3 justify-center py-3'>
+<div class="flex justify-center">
+  <div class="block rounded-lg shadow-lg bg-white max-w-sm text-center">
+    <div class="py-3 px-6 border-b border-gray-300">
+      Featured
+    </div>
+    <div class="p-6">
+      <h5 class="text-gray-900 text-xl font-medium mb-2">Special title treatment</h5>
+      <p class="text-gray-700 text-base mb-4">
+        With supporting text below as a natural lead-in to additional content.
+      </p>
+      <button type="button" class=" inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Button</button>
+    </div>
+    <div class="py-3 px-6 border-t border-gray-300 text-gray-600">
+      2 days ago
+    </div>
+  </div>
+</div>
+<div class="flex justify-center">
+  <div class="block rounded-lg shadow-lg bg-white max-w-sm text-center">
+    <div class="py-3 px-6 border-b border-gray-300">
+      Featured
+    </div>
+    <div class="p-6">
+      <h5 class="text-gray-900 text-xl font-medium mb-2">Special title treatment</h5>
+      <p class="text-gray-700 text-base mb-4">
+        With supporting text below as a natural lead-in to additional content.
+      </p>
+      <button type="button" class=" inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Button</button>
+    </div>
+    <div class="py-3 px-6 border-t border-gray-300 text-gray-600">
+      2 days ago
+    </div>
+  </div>
+</div>
+<div class="flex justify-center">
+  <div class="block rounded-lg shadow-lg bg-white max-w-sm text-center">
+    <div class="py-3 px-6 border-b border-gray-300">
+      Featured
+    </div>
+    <div class="p-6">
+      <h5 class="text-gray-900 text-xl font-medium mb-2">Special title treatment</h5>
+      <p class="text-gray-700 text-base mb-4">
+        With supporting text below as a natural lead-in to additional content.
+      </p>
+      <button type="button" class=" inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Button</button>
+    </div>
+    <div class="py-3 px-6 border-t border-gray-300 text-gray-600">
+      2 days ago
+    </div>
+  </div>
+</div>
+<div class="flex justify-center">
+  <div class="block rounded-lg shadow-lg bg-white max-w-sm text-center">
+    <div class="py-3 px-6 border-b border-gray-300">
+      Featured
+    </div>
+    <div class="p-6">
+      <h5 class="text-gray-900 text-xl font-medium mb-2">Special title treatment</h5>
+      <p class="text-gray-700 text-base mb-4">
+        With supporting text below as a natural lead-in to additional content.
+      </p>
+      <button type="button" class=" inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Button</button>
+    </div>
+    <div class="py-3 px-6 border-t border-gray-300 text-gray-600">
+      2 days ago
+    </div>
+  </div>
+</div>
+</div>
+</section>
+<footer className='absolute bottom-0  w-full bg-gray-900 text-white'>
+
+  Copyright Navdeep Singh@2022
+</footer>
         </div>
      
         </>
