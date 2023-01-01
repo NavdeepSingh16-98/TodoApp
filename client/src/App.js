@@ -9,13 +9,19 @@ import MainPage from './components/MainPage/MainPage';
 import Login from './components/Login';
 import Modal from './components/Modal';
 import Modal2 from './components/Modal2';
+import TodoDisplay from './components/TodoDisplay';
+//import ActualMainPage from './components/ActualMainPage'
 import './App.css';
+
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <Router>
     <div className="App">
     {/* Welcome to App */}
+    <Navbar/>
 
 
     <Routes>
@@ -30,13 +36,15 @@ function App() {
           <Route path="home" element={<MainPage/>}/>
           <Route path="modal" element={<Modal/>}/>
           <Route path="modal2" element={<Modal2/>}/>
-
+<Route exact path="/todo/:todoTitle" element={<TodoDisplay/>} />
 
 
 
           <Route path="*" element={<NoPage />} />
         </Route>
     </Routes>
+
+    <Footer/>
     {/* <SignUp /> */}
 
     </div>
