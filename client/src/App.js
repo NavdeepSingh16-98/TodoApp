@@ -7,6 +7,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import MainPage from './components/MainPage/MainPage';
 //import SideBar2 from './components/SideBar2'
 import Login from './components/Login';
+import Modal from './components/Modal';
+import Modal2 from './components/Modal2';
 import './App.css';
 
 function App() {
@@ -26,6 +28,10 @@ function App() {
           <Route path="m2" element={<MainPage2/>}/>
           <Route path="s2" element={<SideBar2/>}/> */}
           <Route path="home" element={<MainPage/>}/>
+          <Route path="modal" element={<Modal/>}/>
+          <Route path="modal2" element={<Modal2/>}/>
+
+
 
 
           <Route path="*" element={<NoPage />} />
