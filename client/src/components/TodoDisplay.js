@@ -1,4 +1,7 @@
 import { useParams,useNavigate } from 'react-router-dom';
+
+import Edit from '../images/edit.svg'
+import Delete from '../images/delete.svg'
 function TodoDisplay(){
 
 
@@ -23,16 +26,16 @@ function TodoDisplay(){
           <thead class="border-b bg-gray-800">
             <tr>
               <th scope="col" class="text-sm font-medium text-white px-6 py-4">
-                #
+                S.No.
               </th>
               <th scope="col" class="text-sm font-medium text-white px-6 py-4">
-                First
+                Title
               </th>
               <th scope="col" class="text-sm font-medium text-white px-6 py-4">
-                Last
+                Status
               </th>
-              <th scope="col" class="text-sm font-medium text-white px-6 py-4">
-                Handle
+              <th scope="col" colSpan={2} class="text-sm font-medium text-white px-6 py-4">
+                Action
               </th>
             </tr>
           </thead >
@@ -40,36 +43,34 @@ function TodoDisplay(){
             <tr class="bg-white border-b">
               <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">1</td>
               <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                Mark
+                Going To Gym
               </td>
               <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                Otto
+                In Progress
               </td>
-              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                @mdo
+              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap flex justify-around">
+              <button type="button" class="  bg-transparent text-slate-500  font-medium text-xs leading-tight uppercase rounded shadow-md hover:text-blue-700 hover:shadow-lg focus:text-slate-700 focus:shadow-lg focus:outline-none focus:ring-0 active:text-blue-800 active:shadow-lg transition duration-150 ease-in-out"><img src={Edit} /></button>
+            
+              <button type="button" class="  bg-transparent text-slate-500  font-medium text-xs leading-tight uppercase rounded shadow-md hover:text-slate-700 hover:shadow-lg focus:text-slate-700 focus:shadow-lg focus:outline-none focus:ring-0 active:text-blue-800 active:shadow-lg transition duration-150 ease-in-out"><img src={Delete} /></button>
+
               </td>
             </tr >
             <tr class="bg-white border-b">
               <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">2</td>
               <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                Jacob
+                Going For BreakFast
               </td>
               <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                Thornton
+                In Progress
               </td>
-              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                @fat
+              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap flex justify-around">
+              <button type="button" class="  bg-transparent text-slate-500  font-medium text-xs leading-tight uppercase rounded shadow-md hover:text-blue-700 hover:shadow-lg focus:text-slate-700 focus:shadow-lg focus:outline-none focus:ring-0 active:text-blue-800 active:shadow-lg transition duration-150 ease-in-out"><img src={Edit} /></button>
+            
+              <button type="button" class="  bg-transparent text-slate-500  font-medium text-xs leading-tight uppercase rounded shadow-md hover:text-slate-700 hover:shadow-lg focus:text-slate-700 focus:shadow-lg focus:outline-none focus:ring-0 active:text-blue-800 active:shadow-lg transition duration-150 ease-in-out"><img src={Delete} /></button>
+
               </td>
             </tr>
-            <tr class="bg-white border-b">
-              <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">3</td>
-              <td colspan="2" class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap text-center">
-                Larry the Bird
-              </td>
-              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                @twitter
-              </td>
-            </tr>
+          
           </tbody>
         </table>
       </div>
